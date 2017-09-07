@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title> KPK PORTAL TESTING </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <script>
+        function validateForm() {
+            var x = document.forms["testForm"]["navn"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="dataForm">
+            <div class="row">
+                <div class="col-sm-2"><img class="alignnone size-medium wp-image-85" src="http://threejs-sadan.co.nf/kpk-test/wp-content/uploads/2017/08/logo_misjon-uten-grenser-300x300.jpg"
+                        alt="" width="300" height="300" /></div>
+                <div class="col-sm-8">
+                    <form action="portal.php" method="post" name="testForm">
+                        <div class="row">
+                            <div class="form-group col-xs-8"><label for="email">Navn på menighet: </label>
+                                <input class="form-control" name="navn" type="text" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-xs-8"><label for="pwd">Dato for kollekt:</label>
+                                <input class="form-control" name="dato" type="date" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-xs-8"><label for="pwd">Eventuell annen info til organisasjon:</label>
+                                <input class="form-control" name="info" type="text" />
+                            </div>
+                        </div>
+                        <button class="btn btn-default" type="submit">Send inn</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+
+</body>
+
+</html>
