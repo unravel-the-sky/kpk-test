@@ -137,11 +137,21 @@ a:hover, a:focus, a:active {
 	margin-left:10px;
 }
 #main {
+	width: 1360px;
 	margin-left:22px;
 	margin-top:22px;
 	float: left;
 	z-index:4;
 }
+
+#top-bar #site-logo {
+    padding: 0 85px;
+}
+@media screen and (max-width: 750px){
+#top-bar #site-logo {
+    display: block;
+    text-align: center;
+}}
 
 .poste {
 	background-color: white;
@@ -253,7 +263,7 @@ display: none;
 	padding:30px;
 	padding-bottom:20px;
 	max-width:990px;
-	margin-top:-140px;
+	margin-top:-40px;
 	overflow:auto;
 }
 #meta {
@@ -606,6 +616,7 @@ display: none;
 /* Portrait Tablets */
 @media only screen and (min-width: 768px) and (max-width: 999px) {
 	#container {
+	overflow: hidden;
 	width:1060px;
    }
 	#main {
