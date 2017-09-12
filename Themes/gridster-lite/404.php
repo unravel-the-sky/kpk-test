@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<?php get_sidebar(); ?>
+
 <div id="main">
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <h1 class="page-title">

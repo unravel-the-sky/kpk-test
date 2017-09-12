@@ -79,7 +79,6 @@ a:hover, a:focus, a:active {
 
 /* Theme Layout */
 #container {
-	width:1250px;
 	overflow:hidden;
 }
 #sidebar {
@@ -140,8 +139,7 @@ a:hover, a:focus, a:active {
 #main {
 	margin-left:22px;
 	margin-top:22px;
-	float: right;
-	width:990px;
+	float: left;
 	z-index:4;
 }
 
@@ -592,10 +590,11 @@ img {
 /* 1024 Screens */
 @media only screen and (min-width: 1000px) and (max-width: 1249px) {
 #container {
- width:1000px;
+	width:1310px;	
+ overflow: hidden;
 }
  #main {
- width:740px;
+	width:1050px;	
 }
  .portfoliooverlay span {
  line-height: 10px;
@@ -606,12 +605,12 @@ display: none;
 
 /* Portrait Tablets */
 @media only screen and (min-width: 768px) and (max-width: 999px) {
- #container {
- width:750px;
-}
- #main {
- width:490px;
-}
+	#container {
+	width:1060px;
+   }
+	#main {
+	width: 800px;
+   }
  .portfoliooverlay span {
  line-height: 10px;
 display: none;

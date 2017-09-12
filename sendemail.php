@@ -1,9 +1,32 @@
 <?php
     /*
-    Template Name: SendMail
+    WP Post Template: Selection Template
     */
 ?>
 
+
+<html>
+
+<head>
+    <title> testing </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["testForm"]["navn"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
 <?PHP
 
     // to send mail
@@ -78,3 +101,5 @@
         </div>
 
     </div>
+
+</body>

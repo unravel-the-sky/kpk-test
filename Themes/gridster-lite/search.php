@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<?php get_sidebar(); ?>
+
 
 <div id="main">
 <?php if ( have_posts() ) : ?>
